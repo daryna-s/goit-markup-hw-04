@@ -8,6 +8,8 @@
 --accent-txt-cl: #2196F3; 
 --next1-txt-cl: #000000;
 --next2-txt-cl: #FFFFFF;
+--next3-txt-cl:#212121;
+--next4-txt-cl: #AFB1B8;
 
 /* bacground colors */ 
 
@@ -15,6 +17,7 @@
 --secondary-bg-cl: #2f303a;
 --accent-bg-cl: #2196F3;
 --next1-bg-cl:#F5F4FA;
+--new-secondary-bg-cl:#C4C4C4;
 
 --border-cl:#ECECEC;
 }
@@ -140,6 +143,24 @@ address {
 }
 .contacts-list{
     margin-right: 50px;
+    cursor: pointer;
+        padding-top: 32px;
+            padding-bottom: 32px;
+}
+.nav-contact {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    border: none;
+    background-color: var(--main-bg-cl);
+    color: var(--main-txt-cl);
+    margin-right: 10px;
+
+}
+.contacts-icon {
+    fill: currentColor;
+margin-right: 10px;
 }
 .mail,
 .phone {
@@ -147,18 +168,32 @@ address {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
     color: var(--main-txt-cl);
 }
-
+.nav-contact:hover {
+    color: var(--accent-txt-cl);
+    fill: var(--accent-txt-cl);
+}
 /* основная часть */
 /* hero */
 .hero {
-    background-color: var(--secondary-bg-cl);
+    background-color: var(--new-secondary-bg-cl);
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .title-first {
     margin: 0 auto;
@@ -202,6 +237,7 @@ address {
 .button:focus {
     background-color: #188CE8;
 }
+
 
 /* особенности */
 
@@ -315,6 +351,57 @@ address {
     margin-right: 30px;
 }
 
+/* < !-- Постоянные клиенты --> */
+
+
+.regular-customers {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+
+    color: var(--next3-txt-cl);
+}
+.customer-list {
+    display: flex;
+    justify-content: space-between;
+}
+.customer-item {
+    display: flex;
+    margin-right: 30px;
+    width: 170px;
+    height: 92px;
+    font-weight: 500;
+    font-size: 5px;
+    line-height: 1.2;
+    text-align: center;
+    cursor: pointer;
+
+   color: var(--next4-txt-cl);
+    border: 1px solid var(--next4-txt-cl);
+    background-color: var(--main-bg-cl);
+    border-radius: 4px;
+}
+.customer-link{
+padding: 16px 32px;
+color: var(--main-txt-cl);
+}
+.customer-item:last-child {
+    margin-right: 0;
+}
+
+.customer-icon {
+    fill: var(--next4-txt-cl);
+}
+.customer-link: hover,
+.customer-link: focus {
+border: 1px solid var(--accent-txt-cl);
+background-color: var(--main-bg-cl);
+fill: var(--accent-txt-cl);
+}
+
 /* футер */
 
 
@@ -323,6 +410,7 @@ address {
     padding-bottom: 60px;
     background-color: var(--secondary-bg-cl);
 }
+
 .footer-logo {
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -332,6 +420,7 @@ address {
 
     color: var(--next2-txt-cl);
 }
+
 .contacts-link {
     font-size: 14px;
     line-height: 1.71;
@@ -339,6 +428,7 @@ address {
 
     color: var(--next2-txt-cl);
 }
+
 .contacts-list {
     font-size: 14px;
     line-height: 1.71;
@@ -346,23 +436,27 @@ address {
 
     color: rgba(255, 255, 255, 0.6);
 }
+
 .logo-contacts .footer-container {
     display: block;
 }
-.logo-contacts .logo{
+
+.logo-contacts .logo {
     margin-bottom: 20px;
     display: inline-block;
 }
+
 .footer-link:last-child {
     margin-bottom: 0;
 }
+
 .footer-link {
     margin-bottom: 9px;
 }
+
 .footer-list {
     padding: 0;
 }
-
 /* Portfolio */
 
 .portfolio-container {
