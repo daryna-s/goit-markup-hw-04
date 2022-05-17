@@ -142,25 +142,25 @@ address {
     margin-right: 0;
 }
 .contacts-list {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center; */
     margin-right: 50px;
-    cursor: pointer;
+    /* cursor: pointer;
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 32px; */
+    
 }
 .nav-contact {
     border: none;
     background-color: var(--main-bg-cl);
     color: var(--main-txt-cl);
-
-
+    
 }
 .contacts-icon {
-    fill: currentColor;
+    fill: currentColor; 
     margin-right: 10px;
-       
 }
 .mail,
 .phone {
@@ -306,7 +306,7 @@ address {
     margin-right: 0;
 }
 .team-name {
-    display: block;
+    /* display: block; */
     padding: 30px 10px 30px 10px;
 }
 .employees {
@@ -433,8 +433,13 @@ border-color: var(--accent-txt-cl);
 
 
 /* футер */
-
-
+.footer-address {
+    display: flex;
+    flex-direction: column;
+}
+.footer-block {
+    margin-right: 70px;
+}
 .logo-contacts {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -452,6 +457,7 @@ border-color: var(--accent-txt-cl);
 }
 
 .contacts-link {
+    display: block;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -460,6 +466,7 @@ border-color: var(--accent-txt-cl);
 }
 
 .contacts-list {
+    display: block;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -467,26 +474,55 @@ border-color: var(--accent-txt-cl);
     color: rgba(255, 255, 255, 0.6);
 }
 
-.logo-contacts .footer-container {
+/* .logo-contacts .footer-container {
     display: block;
-}
+} */
 
 .logo-contacts .logo {
     margin-bottom: 20px;
     display: inline-block;
 }
 
-.footer-link:last-child {
-    margin-bottom: 0;
+
+.footer-contacts .link {
+    display: block;
+margin-bottom: 9px;
+}
+.footer-contacts .link:last-child {
+    margin-bottom: 0px;
 }
 
-.footer-link {
-    margin-bottom: 9px;
-}
-
-.footer-list {
+.footer-contacts {
     padding: 0;
+        margin: 0;
+        list-style: none;
 }
+/* .footer-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+} */
+
+.socials-footer {
+    display: block;
+    align-items: baseline;
+    /* padding-top: 78px;
+    padding-bottom: 94px; */
+}
+
+
+.footer-title {
+font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+color: var(--next2-txt-cl);
+}
+
+
 /* Portfolio */
 
 .portfolio-container {
